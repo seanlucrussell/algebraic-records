@@ -1,5 +1,5 @@
-const Just = x => r => r.Just(x);
-const Nothing = r => r.Nothing;
+const Just = x => handler => handler.Just(x);
+const Nothing = handler => handler.Nothing;
 
 const match = (value, handler) => value(handler);
 
